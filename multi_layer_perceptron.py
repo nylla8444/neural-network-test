@@ -12,7 +12,7 @@ WEIGHTS_MATRIX = [
     [0.5, 0.7, 0.2, 0.9, 0.4]   # neuron 5 
 ]
 
-# Generate a of Random Bias based on how many neurons available
+# Generate a list of Random Biases based on how many neurons are available
 BIASES = [random.uniform(0, 0.2) for _ in range(len(WEIGHTS_MATRIX))]
 
 def perceptron_calc(inputs, weights, bias):
