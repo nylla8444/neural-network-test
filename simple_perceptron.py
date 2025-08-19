@@ -24,6 +24,10 @@ sum = 0
 for i in range(len(INPUTS)):
     sum += INPUTS[i] * WEIGHTS[i]
 
+# Add bias
+BIAS = 0.2
+sum += BIAS
+
 # Step Function activation. 1 is True, 0 is False.
 if sum > THRESHOLD:
     print("Output: 1")
