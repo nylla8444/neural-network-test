@@ -2,7 +2,7 @@
 """
 
 To run:
-python .\perceptron.py
+python .\simple_perceptron.py
 
 
 To test:
@@ -14,7 +14,6 @@ Change values of INPUTS and WEIGHTS
 THRESHOLD = 1.5
 
 INPUTS = [1, 0, 1, 0, 1]
-
 # Every input should have a corresponding weight.
 WEIGHTS = [0.7, 0.6, 0.5, 0.3, 0.4]
 
