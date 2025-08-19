@@ -1,6 +1,6 @@
 """
 
-To run:
+To run, copy and paste into your terminal:
 python .\multi_layer_perceptron.py
 
 

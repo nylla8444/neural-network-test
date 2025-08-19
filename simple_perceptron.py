@@ -1,7 +1,7 @@
 
 """
 
-To run:
+To run, copy and paste into your terminal:
 python .\simple_perceptron.py
 
 
