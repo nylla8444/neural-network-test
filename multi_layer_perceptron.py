@@ -1,3 +1,15 @@
+"""
+
+To run:
+python .\multi_layer_perceptron.py
+
+
+To test:
+Change values of INITIAL_INPUTS and WEIGHTS_MATRIX
+
+"""
+
+
 import math, random
 
 
@@ -12,11 +24,20 @@ WEIGHTS_MATRIX = [
     [0.5, 0.7, 0.2, 0.9, 0.4]   # neuron 5 
 ]
 
-# Generate a list of Random Biases based on how many neurons are available
+"""
+ Generates a list of Random Biases based on how many neurons are going to be 
+ generated in the layer_perceptron function.
+
+ Number of layers to be generated can be referenced in the WEIGHTS_MATRIX.
+"""
 BIASES = [random.uniform(0, 0.2) for _ in range(len(WEIGHTS_MATRIX))]
 
+
+# The core calculation for every neuron
 def perceptron_calc(inputs, weights, bias):
     output = 0
+
+    # Basically a summation:
     for i in range(len(inputs)):
         output += inputs[i] * weights[i]
 
@@ -25,7 +46,7 @@ def perceptron_calc(inputs, weights, bias):
     return output
 
 
-# Sigmoid Activation Function
+# Sigmoid Activation Function (Better than using Step Activation Function)
 def sigmoid(x):
     return 1 / (1 + math.exp(-x))
 
